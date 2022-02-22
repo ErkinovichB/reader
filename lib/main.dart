@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
       var bytes = await consolidateHttpClientResponseBytes(response);
       var dir = await getApplicationDocumentsDirectory();
       print("Download files");
-      print("${dir.path}/$filename");
+      print("${dir.path}/$filename");   
       File file = File("${dir.path}/$filename");
 
       await file.writeAsBytes(bytes, flush: true);
